@@ -7,21 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91B2B01A827ACB3FED7C9B69 /* Pods_CarTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57070865C8845E094EC08E53 /* Pods_CarTest.framework */; };
 		E834DE6E1DCDD407009A5B35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DE6D1DCDD407009A5B35 /* AppDelegate.swift */; };
-		E834DE701DCDD408009A5B35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DE6F1DCDD408009A5B35 /* ViewController.swift */; };
 		E834DE731DCDD409009A5B35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E834DE711DCDD409009A5B35 /* Main.storyboard */; };
-		E834DE751DCDD409009A5B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E834DE741DCDD409009A5B35 /* Assets.xcassets */; };
 		E834DE781DCDD409009A5B35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E834DE761DCDD409009A5B35 /* LaunchScreen.storyboard */; };
+		E834DE801DCDDB0B009A5B35 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DE7F1DCDDB0B009A5B35 /* CarListViewController.swift */; };
+		E834DE8A1DCDDCBF009A5B35 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DE891DCDDCBF009A5B35 /* CarTableViewCell.swift */; };
+		E834DE951DCDEE8B009A5B35 /* AddCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DE941DCDEE8B009A5B35 /* AddCarViewController.swift */; };
+		E834DE9B1DCDF8D5009A5B35 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DE9A1DCDF8D5009A5B35 /* Extensions.swift */; };
+		E834DE9E1DCE0484009A5B35 /* EngineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DE9D1DCE0484009A5B35 /* EngineCell.swift */; };
+		E834DEA01DCE04A4009A5B35 /* TransmissionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DE9F1DCE04A4009A5B35 /* TransmissionCell.swift */; };
+		E834DEA21DCE04BE009A5B35 /* ConditionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DEA11DCE04BE009A5B35 /* ConditionCell.swift */; };
+		E834DEA41DCE04DD009A5B35 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DEA31DCE04DD009A5B35 /* DescriptionCell.swift */; };
+		E834DEA61DCE04F8009A5B35 /* ModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DEA51DCE04F8009A5B35 /* ModelCell.swift */; };
+		E834DEA81DCE0511009A5B35 /* PriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DEA71DCE0511009A5B35 /* PriceCell.swift */; };
+		E834DEAC1DCE0AA4009A5B35 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DEAB1DCE0AA4009A5B35 /* CoreData.swift */; };
+		E8C1349F1DCE6EAE006C014A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C1349E1DCE6EAE006C014A /* Assets.xcassets */; };
+		E8C134A21DCE8523006C014A /* CarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C134A11DCE8523006C014A /* CarData.swift */; };
+		E8E37E911DCE1E07001305E8 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E8E37E8F1DCE1E07001305E8 /* Database.xcdatamodeld */; };
+		E8E37E971DCE317A001305E8 /* OpenWeatherMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E37E961DCE317A001305E8 /* OpenWeatherMap.swift */; };
+		E8E37E9E1DCE35BF001305E8 /* Thumbnail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E37E981DCE35BF001305E8 /* Thumbnail+CoreDataClass.swift */; };
+		E8E37E9F1DCE35BF001305E8 /* Thumbnail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E37E991DCE35BF001305E8 /* Thumbnail+CoreDataProperties.swift */; };
+		E8E37EA01DCE35BF001305E8 /* Weather+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E37E9A1DCE35BF001305E8 /* Weather+CoreDataClass.swift */; };
+		E8E37EA11DCE35BF001305E8 /* Weather+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E37E9B1DCE35BF001305E8 /* Weather+CoreDataProperties.swift */; };
+		E8E37EA21DCE35BF001305E8 /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E37E9C1DCE35BF001305E8 /* Car+CoreDataClass.swift */; };
+		E8E37EA31DCE35BF001305E8 /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E37E9D1DCE35BF001305E8 /* Car+CoreDataProperties.swift */; };
+		E8E37EA81DCE42F4001305E8 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E37EA71DCE42F4001305E8 /* DataService.swift */; };
+		E8E37EAB1DCE5E56001305E8 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E37EAA1DCE5E56001305E8 /* WeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30ACF5350EF161FF8C8A1260 /* Pods-CarTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarTest/Pods-CarTest.release.xcconfig"; sourceTree = "<group>"; };
+		57070865C8845E094EC08E53 /* Pods_CarTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D71333610D440ACC353FC850 /* Pods-CarTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarTest/Pods-CarTest.debug.xcconfig"; sourceTree = "<group>"; };
 		E834DE6A1DCDD406009A5B35 /* CarTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E834DE6D1DCDD407009A5B35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E834DE6F1DCDD408009A5B35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E834DE721DCDD409009A5B35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E834DE741DCDD409009A5B35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E834DE771DCDD409009A5B35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E834DE791DCDD409009A5B35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E834DE7F1DCDDB0B009A5B35 /* CarListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarListViewController.swift; path = "UI/Car List/CarListViewController.swift"; sourceTree = "<group>"; };
+		E834DE891DCDDCBF009A5B35 /* CarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarTableViewCell.swift; path = "UI/Car List/CarTableViewCell.swift"; sourceTree = "<group>"; };
+		E834DE941DCDEE8B009A5B35 /* AddCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddCarViewController.swift; path = "UI/Add Car/AddCarViewController.swift"; sourceTree = "<group>"; };
+		E834DE9A1DCDF8D5009A5B35 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Extensions/Extensions.swift; sourceTree = "<group>"; };
+		E834DE9D1DCE0484009A5B35 /* EngineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EngineCell.swift; path = "UI/Add Car/EngineCell.swift"; sourceTree = "<group>"; };
+		E834DE9F1DCE04A4009A5B35 /* TransmissionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransmissionCell.swift; path = "UI/Add Car/TransmissionCell.swift"; sourceTree = "<group>"; };
+		E834DEA11DCE04BE009A5B35 /* ConditionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConditionCell.swift; path = "UI/Add Car/ConditionCell.swift"; sourceTree = "<group>"; };
+		E834DEA31DCE04DD009A5B35 /* DescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DescriptionCell.swift; path = "UI/Add Car/DescriptionCell.swift"; sourceTree = "<group>"; };
+		E834DEA51DCE04F8009A5B35 /* ModelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelCell.swift; path = "UI/Add Car/ModelCell.swift"; sourceTree = "<group>"; };
+		E834DEA71DCE0511009A5B35 /* PriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PriceCell.swift; path = "UI/Add Car/PriceCell.swift"; sourceTree = "<group>"; };
+		E834DEAB1DCE0AA4009A5B35 /* CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreData.swift; path = CoreData/CoreData.swift; sourceTree = "<group>"; };
+		E8C1349E1DCE6EAE006C014A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8C134A11DCE8523006C014A /* CarData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarData.swift; path = "UI/Add Car/CarData.swift"; sourceTree = "<group>"; };
+		E8E37E901DCE1E07001305E8 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		E8E37E961DCE317A001305E8 /* OpenWeatherMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenWeatherMap.swift; path = Model/OpenWeatherMap.swift; sourceTree = "<group>"; };
+		E8E37E981DCE35BF001305E8 /* Thumbnail+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Thumbnail+CoreDataClass.swift"; path = "Model/Thumbnail+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E8E37E991DCE35BF001305E8 /* Thumbnail+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Thumbnail+CoreDataProperties.swift"; path = "Model/Thumbnail+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E8E37E9A1DCE35BF001305E8 /* Weather+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Weather+CoreDataClass.swift"; path = "Model/Weather+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E8E37E9B1DCE35BF001305E8 /* Weather+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Weather+CoreDataProperties.swift"; path = "Model/Weather+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E8E37E9C1DCE35BF001305E8 /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Car+CoreDataClass.swift"; path = "Model/Car+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E8E37E9D1DCE35BF001305E8 /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Car+CoreDataProperties.swift"; path = "Model/Car+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E8E37EA71DCE42F4001305E8 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = Model/DataService.swift; sourceTree = "<group>"; };
+		E8E37EAA1DCE5E56001305E8 /* WeatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherView.swift; path = "UI/Car List/WeatherView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +75,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B2B01A827ACB3FED7C9B69 /* Pods_CarTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0419553C6AC2D26A1E23666E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D71333610D440ACC353FC850 /* Pods-CarTest.debug.xcconfig */,
+				30ACF5350EF161FF8C8A1260 /* Pods-CarTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1DA5EEC87F0156070A3B93CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57070865C8845E094EC08E53 /* Pods_CarTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E834DE611DCDD405009A5B35 = {
 			isa = PBXGroup;
 			children = (
 				E834DE6C1DCDD406009A5B35 /* CarTest */,
 				E834DE6B1DCDD406009A5B35 /* Products */,
+				0419553C6AC2D26A1E23666E /* Pods */,
+				1DA5EEC87F0156070A3B93CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +120,163 @@
 		E834DE6C1DCDD406009A5B35 /* CarTest */ = {
 			isa = PBXGroup;
 			children = (
-				E834DE6D1DCDD407009A5B35 /* AppDelegate.swift */,
-				E834DE6F1DCDD408009A5B35 /* ViewController.swift */,
-				E834DE711DCDD409009A5B35 /* Main.storyboard */,
-				E834DE741DCDD409009A5B35 /* Assets.xcassets */,
-				E834DE761DCDD409009A5B35 /* LaunchScreen.storyboard */,
-				E834DE791DCDD409009A5B35 /* Info.plist */,
+				E834DE851DCDDB6F009A5B35 /* App Delegate */,
+				E834DE831DCDDB31009A5B35 /* Storyboards */,
+				E834DE861DCDDB89009A5B35 /* Models */,
+				E834DE821DCDDB21009A5B35 /* Controllers */,
+				E834DEAD1DCE0AA9009A5B35 /* CoreData */,
+				E834DE991DCDF89B009A5B35 /* Extensions */,
+				E834DE841DCDDB56009A5B35 /* Supporting Files */,
 			);
 			path = CarTest;
+			sourceTree = "<group>";
+		};
+		E834DE811DCDDB11009A5B35 /* Car List */ = {
+			isa = PBXGroup;
+			children = (
+				E834DE7F1DCDDB0B009A5B35 /* CarListViewController.swift */,
+				E8E37EA91DCE5E1D001305E8 /* Weather View */,
+				E834DE881DCDDC90009A5B35 /* Cell */,
+			);
+			name = "Car List";
+			sourceTree = "<group>";
+		};
+		E834DE821DCDDB21009A5B35 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E834DE811DCDDB11009A5B35 /* Car List */,
+				E8C134A01DCE797B006C014A /* Car Detail */,
+				E834DE931DCDEE21009A5B35 /* Add Car */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E834DE831DCDDB31009A5B35 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E834DE711DCDD409009A5B35 /* Main.storyboard */,
+				E834DE761DCDD409009A5B35 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		E834DE841DCDDB56009A5B35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8C1349E1DCE6EAE006C014A /* Assets.xcassets */,
+				E834DE791DCDD409009A5B35 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E834DE851DCDDB6F009A5B35 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E834DE6D1DCDD407009A5B35 /* AppDelegate.swift */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		E834DE861DCDDB89009A5B35 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E8E37EA61DCE3792001305E8 /* Car */,
+				E8E37EA41DCE377C001305E8 /* Images */,
+				E8E37EA51DCE3786001305E8 /* Weather */,
+				E8E37E961DCE317A001305E8 /* OpenWeatherMap.swift */,
+				E8E37EA71DCE42F4001305E8 /* DataService.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E834DE881DCDDC90009A5B35 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E834DE891DCDDCBF009A5B35 /* CarTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		E834DE931DCDEE21009A5B35 /* Add Car */ = {
+			isa = PBXGroup;
+			children = (
+				E8C134A11DCE8523006C014A /* CarData.swift */,
+				E834DE941DCDEE8B009A5B35 /* AddCarViewController.swift */,
+				E834DE9C1DCE0439009A5B35 /* Cells */,
+			);
+			name = "Add Car";
+			sourceTree = "<group>";
+		};
+		E834DE991DCDF89B009A5B35 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E834DE9A1DCDF8D5009A5B35 /* Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		E834DE9C1DCE0439009A5B35 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E834DE9D1DCE0484009A5B35 /* EngineCell.swift */,
+				E834DE9F1DCE04A4009A5B35 /* TransmissionCell.swift */,
+				E834DEA11DCE04BE009A5B35 /* ConditionCell.swift */,
+				E834DEA31DCE04DD009A5B35 /* DescriptionCell.swift */,
+				E834DEA51DCE04F8009A5B35 /* ModelCell.swift */,
+				E834DEA71DCE0511009A5B35 /* PriceCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E834DEAD1DCE0AA9009A5B35 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E834DEAB1DCE0AA4009A5B35 /* CoreData.swift */,
+				E8E37E8F1DCE1E07001305E8 /* Database.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		E8C134A01DCE797B006C014A /* Car Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Car Detail";
+			sourceTree = "<group>";
+		};
+		E8E37EA41DCE377C001305E8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E8E37E981DCE35BF001305E8 /* Thumbnail+CoreDataClass.swift */,
+				E8E37E991DCE35BF001305E8 /* Thumbnail+CoreDataProperties.swift */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E8E37EA51DCE3786001305E8 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				E8E37E9A1DCE35BF001305E8 /* Weather+CoreDataClass.swift */,
+				E8E37E9B1DCE35BF001305E8 /* Weather+CoreDataProperties.swift */,
+			);
+			name = Weather;
+			sourceTree = "<group>";
+		};
+		E8E37EA61DCE3792001305E8 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				E8E37E9C1DCE35BF001305E8 /* Car+CoreDataClass.swift */,
+				E8E37E9D1DCE35BF001305E8 /* Car+CoreDataProperties.swift */,
+			);
+			name = Car;
+			sourceTree = "<group>";
+		};
+		E8E37EA91DCE5E1D001305E8 /* Weather View */ = {
+			isa = PBXGroup;
+			children = (
+				E8E37EAA1DCE5E56001305E8 /* WeatherView.swift */,
+			);
+			name = "Weather View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +286,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E834DE7C1DCDD409009A5B35 /* Build configuration list for PBXNativeTarget "CarTest" */;
 			buildPhases = (
+				4823C207CB2F2AAD8FDA22C6 /* [CP] Check Pods Manifest.lock */,
 				E834DE661DCDD406009A5B35 /* Sources */,
 				E834DE671DCDD406009A5B35 /* Frameworks */,
 				E834DE681DCDD406009A5B35 /* Resources */,
+				A10677F8CBF9A57F592F27A0 /* [CP] Embed Pods Frameworks */,
+				A326520F607D01700497B553 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,20 +343,89 @@
 			buildActionMask = 2147483647;
 			files = (
 				E834DE781DCDD409009A5B35 /* LaunchScreen.storyboard in Resources */,
-				E834DE751DCDD409009A5B35 /* Assets.xcassets in Resources */,
+				E8C1349F1DCE6EAE006C014A /* Assets.xcassets in Resources */,
 				E834DE731DCDD409009A5B35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4823C207CB2F2AAD8FDA22C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A10677F8CBF9A57F592F27A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarTest/Pods-CarTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A326520F607D01700497B553 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarTest/Pods-CarTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E834DE661DCDD406009A5B35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E834DE701DCDD408009A5B35 /* ViewController.swift in Sources */,
+				E834DE951DCDEE8B009A5B35 /* AddCarViewController.swift in Sources */,
+				E834DEA41DCE04DD009A5B35 /* DescriptionCell.swift in Sources */,
+				E834DEAC1DCE0AA4009A5B35 /* CoreData.swift in Sources */,
+				E834DEA21DCE04BE009A5B35 /* ConditionCell.swift in Sources */,
+				E834DE801DCDDB0B009A5B35 /* CarListViewController.swift in Sources */,
 				E834DE6E1DCDD407009A5B35 /* AppDelegate.swift in Sources */,
+				E8E37E9E1DCE35BF001305E8 /* Thumbnail+CoreDataClass.swift in Sources */,
+				E834DEA61DCE04F8009A5B35 /* ModelCell.swift in Sources */,
+				E8E37EA21DCE35BF001305E8 /* Car+CoreDataClass.swift in Sources */,
+				E8E37EA11DCE35BF001305E8 /* Weather+CoreDataProperties.swift in Sources */,
+				E834DEA01DCE04A4009A5B35 /* TransmissionCell.swift in Sources */,
+				E8E37EAB1DCE5E56001305E8 /* WeatherView.swift in Sources */,
+				E8E37EA01DCE35BF001305E8 /* Weather+CoreDataClass.swift in Sources */,
+				E834DE9B1DCDF8D5009A5B35 /* Extensions.swift in Sources */,
+				E834DE9E1DCE0484009A5B35 /* EngineCell.swift in Sources */,
+				E834DEA81DCE0511009A5B35 /* PriceCell.swift in Sources */,
+				E8E37EA81DCE42F4001305E8 /* DataService.swift in Sources */,
+				E8E37E9F1DCE35BF001305E8 /* Thumbnail+CoreDataProperties.swift in Sources */,
+				E8C134A21DCE8523006C014A /* CarData.swift in Sources */,
+				E8E37EA31DCE35BF001305E8 /* Car+CoreDataProperties.swift in Sources */,
+				E8E37E971DCE317A001305E8 /* OpenWeatherMap.swift in Sources */,
+				E8E37E911DCE1E07001305E8 /* Database.xcdatamodeld in Sources */,
+				E834DE8A1DCDDCBF009A5B35 /* CarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +544,7 @@
 		};
 		E834DE7D1DCDD409009A5B35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D71333610D440ACC353FC850 /* Pods-CarTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79E75HSXYN;
@@ -270,6 +558,7 @@
 		};
 		E834DE7E1DCDD409009A5B35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30ACF5350EF161FF8C8A1260 /* Pods-CarTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79E75HSXYN;
@@ -300,8 +589,23 @@
 				E834DE7E1DCDD409009A5B35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E8E37E8F1DCE1E07001305E8 /* Database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E8E37E901DCE1E07001305E8 /* Database.xcdatamodel */,
+			);
+			currentVersion = E8E37E901DCE1E07001305E8 /* Database.xcdatamodel */;
+			name = Database.xcdatamodeld;
+			path = CoreData/Database.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E834DE621DCDD405009A5B35 /* Project object */;
 }
