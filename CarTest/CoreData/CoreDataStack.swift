@@ -1,19 +1,19 @@
 //
-//  CoreData.swift
+//  CoreDataStack.swift
 //  CarTest
 //
-//  Created by Vitaliy Delidov on 11/5/16.
+//  Created by Vitaliy Delidov on 11/6/16.
 //  Copyright © 2016 Vitaliy Delidov. All rights reserved.
 //
 
 import CoreData
 
-class CoreData {
-
+class CoreDataStack {
+    
     static var context: NSManagedObjectContext {
-        return CoreData.persistentContainer.viewContext
+        return CoreDataStack.persistentContainer.viewContext
     }
-
+    
     // MARK: - Core Data stack
     
     static var persistentContainer: NSPersistentContainer = {
@@ -38,6 +38,6 @@ class CoreData {
             }
         }
     }
-
+    
 }
 

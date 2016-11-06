@@ -16,28 +16,35 @@ class DataService {
     
     func storeWeather(_ json: JSON) {
         let weatherClassName: String = String(describing: Weather.self)
-        let weather = NSEntityDescription.insertNewObject(forEntityName: weatherClassName, into: CoreData.context) as! Weather
+        let weather = NSEntityDescription.insertNewObject(forEntityName: weatherClassName, into: CoreDataStack.context) as! Weather
         weather.timeStamp = NSDate()
         weather.json = json.rawString()
         
-        CoreData.saveContext()
+        CoreDataStack.saveContext()
     }
     
     func getWeather() -> JSON? {
         let fetchRequest: NSFetchRequest<Weather> = Weather.fetchRequest()
-        let results = try! CoreData.context.fetch(fetchRequest)
+        let results = try! CoreDataStack.context.fetch(fetchRequest)
         return JSON.parse((results.last?.json)!)
     }
     
     func storeCar(_ carData: CarData) {
         let carClassName: String = String(describing: Car.self)
-        let car = NSEntityDescription.insertNewObject(forEntityName: carClassName, into: CoreData.context) as! Car
+        let car = NSEntityDescription.insertNewObject(forEntityName: carClassName, into: CoreDataStack.context) as! Car
         car.model = carData.model
         car.price = carData.price
         car.desc  = carData.desc
-        car.images = carData.images
         
-        CoreData.saveContext()
+        CoreDataStack.saveContext()
     }
     
+    func storeImage(_ imageData: NSData) {
+        let imageClassName: String = String(describing: Thumbnail.self)
+        let thumbnail = NSEntityDescription.insertNewObject(forEntityName: imageClassName, into: CoreDataStack.context) as! Thumbnail
+        thumbnail.imageData = imageData
+        
+        CoreDataStack.saveContext()
+    }
+
 }

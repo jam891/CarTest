@@ -6,11 +6,10 @@
 //  Copyright © 2016 Vitaliy Delidov. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct CarData {
     var model: String
     var price: Int16
     var desc: String
-    var images: Set<Thumbnail>
 }

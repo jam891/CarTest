@@ -7,7 +7,8 @@
 //
 
 import Foundation
-import CoreData 
+import CoreData
+import UIKit
 
 extension Thumbnail {
 
@@ -19,3 +20,4 @@ extension Thumbnail {
     @NSManaged public var car: Car?
 
 }
+

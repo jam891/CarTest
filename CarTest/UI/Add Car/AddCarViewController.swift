@@ -7,45 +7,58 @@
 //
 
 import UIKit
+import CoreData
 
-class AddCarViewController: UIViewController {
+class AddCarViewController: UITableViewController {
+    
+    @IBOutlet weak var photosCell: CollectionViewCell!
+    @IBOutlet weak var modelCell: TextFieldCell!
+    @IBOutlet weak var priceCell: TextFieldCell!
+    @IBOutlet weak var engineCell: PickerViewCell!
+    @IBOutlet weak var transmissionCell: PickerViewCell!
+    @IBOutlet weak var conditionCell: PickerViewCell!
+    @IBOutlet weak var descriptionCell: TextViewCell!
     
     typealias DidFinishDelegate = (_ carModel: CarData) -> Void
     var didFinish: DidFinishDelegate?
 
-    @IBOutlet weak var tableView: UITableView!
+
+    var cells = [UITableViewCell]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        cells.append(photosCell)
+        cells.append(modelCell)
+        cells.append(priceCell)
+        cells.append(engineCell)
+        cells.append(transmissionCell)
+        cells.append(conditionCell)
+        cells.append(descriptionCell)
+        
+        let dismissTap = UITapGestureRecognizer(target: self, action: #selector(AddCarViewController.dismissKeyboard(_:)))
+        view.addGestureRecognizer(dismissTap)
+    }
+    
+    // MARK: - Dismiss Keyboard
+    
+    func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
 
     // MARK: - Actions
     
     @IBAction func save(sender: UIBarButtonItem) {
-       
+        let model = modelCell.textField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let price = priceCell.textField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let desc  = descriptionCell.textView.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        let carData = CarData(model: model, price: Int16(price)!, desc: desc)
+        didFinish!(carData)
     }
 
 }
 
 
-// MARK: - UITableViewDataSource
 
-extension AddCarViewController: UITableViewDataSource {
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ModelCell", for: indexPath)
-        return cell
-    }
-    
-}
-
-// MARK: - UITableViewDelegate
-
-extension AddCarViewController: UITableViewDelegate {
-
-}

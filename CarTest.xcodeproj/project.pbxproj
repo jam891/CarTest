@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		91B2B01A827ACB3FED7C9B69 /* Pods_CarTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57070865C8845E094EC08E53 /* Pods_CarTest.framework */; };
+		E831EB341DCE9C3C00E16FB8 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831EB331DCE9C3C00E16FB8 /* ImageCell.swift */; };
+		E831EB361DCEA40A00E16FB8 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831EB351DCEA40A00E16FB8 /* ImagePicker.swift */; };
+		E831EB3A1DCF334C00E16FB8 /* AddImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831EB391DCF334C00E16FB8 /* AddImageCell.swift */; };
 		E834DE6E1DCDD407009A5B35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DE6D1DCDD407009A5B35 /* AppDelegate.swift */; };
 		E834DE731DCDD409009A5B35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E834DE711DCDD409009A5B35 /* Main.storyboard */; };
 		E834DE781DCDD409009A5B35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E834DE761DCDD409009A5B35 /* LaunchScreen.storyboard */; };
@@ -15,13 +18,11 @@
 		E834DE8A1DCDDCBF009A5B35 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DE891DCDDCBF009A5B35 /* CarTableViewCell.swift */; };
 		E834DE951DCDEE8B009A5B35 /* AddCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DE941DCDEE8B009A5B35 /* AddCarViewController.swift */; };
 		E834DE9B1DCDF8D5009A5B35 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DE9A1DCDF8D5009A5B35 /* Extensions.swift */; };
-		E834DE9E1DCE0484009A5B35 /* EngineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DE9D1DCE0484009A5B35 /* EngineCell.swift */; };
-		E834DEA01DCE04A4009A5B35 /* TransmissionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DE9F1DCE04A4009A5B35 /* TransmissionCell.swift */; };
-		E834DEA21DCE04BE009A5B35 /* ConditionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DEA11DCE04BE009A5B35 /* ConditionCell.swift */; };
-		E834DEA41DCE04DD009A5B35 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DEA31DCE04DD009A5B35 /* DescriptionCell.swift */; };
-		E834DEA61DCE04F8009A5B35 /* ModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DEA51DCE04F8009A5B35 /* ModelCell.swift */; };
-		E834DEA81DCE0511009A5B35 /* PriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DEA71DCE0511009A5B35 /* PriceCell.swift */; };
-		E834DEAC1DCE0AA4009A5B35 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DEAB1DCE0AA4009A5B35 /* CoreData.swift */; };
+		E866A5FB1DCFA54400188090 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E866A5FA1DCFA54400188090 /* CoreDataStack.swift */; };
+		E866A5FD1DCFB0B400188090 /* PickerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E866A5FC1DCFB0B400188090 /* PickerViewCell.swift */; };
+		E866A6011DCFE27D00188090 /* TextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E866A6001DCFE27D00188090 /* TextViewCell.swift */; };
+		E866A6031DCFE31500188090 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E866A6021DCFE31500188090 /* TextFieldCell.swift */; };
+		E866A6051DCFE38F00188090 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E866A6041DCFE38F00188090 /* CollectionViewCell.swift */; };
 		E8C1349F1DCE6EAE006C014A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C1349E1DCE6EAE006C014A /* Assets.xcassets */; };
 		E8C134A21DCE8523006C014A /* CarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C134A11DCE8523006C014A /* CarData.swift */; };
 		E8E37E911DCE1E07001305E8 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E8E37E8F1DCE1E07001305E8 /* Database.xcdatamodeld */; };
@@ -40,6 +41,9 @@
 		30ACF5350EF161FF8C8A1260 /* Pods-CarTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarTest/Pods-CarTest.release.xcconfig"; sourceTree = "<group>"; };
 		57070865C8845E094EC08E53 /* Pods_CarTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D71333610D440ACC353FC850 /* Pods-CarTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarTest/Pods-CarTest.debug.xcconfig"; sourceTree = "<group>"; };
+		E831EB331DCE9C3C00E16FB8 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCell.swift; path = "UI/Add Car/ImageCell.swift"; sourceTree = "<group>"; };
+		E831EB351DCEA40A00E16FB8 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = Common/ImagePicker.swift; sourceTree = "<group>"; };
+		E831EB391DCF334C00E16FB8 /* AddImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddImageCell.swift; path = "UI/Add Car/AddImageCell.swift"; sourceTree = "<group>"; };
 		E834DE6A1DCDD406009A5B35 /* CarTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E834DE6D1DCDD407009A5B35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E834DE721DCDD409009A5B35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,13 +53,11 @@
 		E834DE891DCDDCBF009A5B35 /* CarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarTableViewCell.swift; path = "UI/Car List/CarTableViewCell.swift"; sourceTree = "<group>"; };
 		E834DE941DCDEE8B009A5B35 /* AddCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddCarViewController.swift; path = "UI/Add Car/AddCarViewController.swift"; sourceTree = "<group>"; };
 		E834DE9A1DCDF8D5009A5B35 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Extensions/Extensions.swift; sourceTree = "<group>"; };
-		E834DE9D1DCE0484009A5B35 /* EngineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EngineCell.swift; path = "UI/Add Car/EngineCell.swift"; sourceTree = "<group>"; };
-		E834DE9F1DCE04A4009A5B35 /* TransmissionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransmissionCell.swift; path = "UI/Add Car/TransmissionCell.swift"; sourceTree = "<group>"; };
-		E834DEA11DCE04BE009A5B35 /* ConditionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConditionCell.swift; path = "UI/Add Car/ConditionCell.swift"; sourceTree = "<group>"; };
-		E834DEA31DCE04DD009A5B35 /* DescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DescriptionCell.swift; path = "UI/Add Car/DescriptionCell.swift"; sourceTree = "<group>"; };
-		E834DEA51DCE04F8009A5B35 /* ModelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelCell.swift; path = "UI/Add Car/ModelCell.swift"; sourceTree = "<group>"; };
-		E834DEA71DCE0511009A5B35 /* PriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PriceCell.swift; path = "UI/Add Car/PriceCell.swift"; sourceTree = "<group>"; };
-		E834DEAB1DCE0AA4009A5B35 /* CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreData.swift; path = CoreData/CoreData.swift; sourceTree = "<group>"; };
+		E866A5FA1DCFA54400188090 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = CoreData/CoreDataStack.swift; sourceTree = "<group>"; };
+		E866A5FC1DCFB0B400188090 /* PickerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerViewCell.swift; path = Common/PickerViewCell.swift; sourceTree = "<group>"; };
+		E866A6001DCFE27D00188090 /* TextViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextViewCell.swift; path = Common/TextViewCell.swift; sourceTree = "<group>"; };
+		E866A6021DCFE31500188090 /* TextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFieldCell.swift; path = Common/TextFieldCell.swift; sourceTree = "<group>"; };
+		E866A6041DCFE38F00188090 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = Common/CollectionViewCell.swift; sourceTree = "<group>"; };
 		E8C1349E1DCE6EAE006C014A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8C134A11DCE8523006C014A /* CarData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarData.swift; path = "UI/Add Car/CarData.swift"; sourceTree = "<group>"; };
 		E8E37E901DCE1E07001305E8 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
@@ -99,6 +101,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E831EB3B1DCF429700E16FB8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E831EB351DCEA40A00E16FB8 /* ImagePicker.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		E834DE611DCDD405009A5B35 = {
 			isa = PBXGroup;
 			children = (
@@ -121,9 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				E834DE851DCDDB6F009A5B35 /* App Delegate */,
-				E834DE831DCDDB31009A5B35 /* Storyboards */,
 				E834DE861DCDDB89009A5B35 /* Models */,
-				E834DE821DCDDB21009A5B35 /* Controllers */,
+				E834DE821DCDDB21009A5B35 /* UI */,
 				E834DEAD1DCE0AA9009A5B35 /* CoreData */,
 				E834DE991DCDF89B009A5B35 /* Extensions */,
 				E834DE841DCDDB56009A5B35 /* Supporting Files */,
@@ -141,14 +150,16 @@
 			name = "Car List";
 			sourceTree = "<group>";
 		};
-		E834DE821DCDDB21009A5B35 /* Controllers */ = {
+		E834DE821DCDDB21009A5B35 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E831EB3B1DCF429700E16FB8 /* Common */,
 				E834DE811DCDDB11009A5B35 /* Car List */,
 				E8C134A01DCE797B006C014A /* Car Detail */,
 				E834DE931DCDEE21009A5B35 /* Add Car */,
+				E834DE831DCDDB31009A5B35 /* Storyboards */,
 			);
-			name = Controllers;
+			name = UI;
 			sourceTree = "<group>";
 		};
 		E834DE831DCDDB31009A5B35 /* Storyboards */ = {
@@ -180,6 +191,7 @@
 		E834DE861DCDDB89009A5B35 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E8C134A11DCE8523006C014A /* CarData.swift */,
 				E8E37EA61DCE3792001305E8 /* Car */,
 				E8E37EA41DCE377C001305E8 /* Images */,
 				E8E37EA51DCE3786001305E8 /* Weather */,
@@ -200,7 +212,6 @@
 		E834DE931DCDEE21009A5B35 /* Add Car */ = {
 			isa = PBXGroup;
 			children = (
-				E8C134A11DCE8523006C014A /* CarData.swift */,
 				E834DE941DCDEE8B009A5B35 /* AddCarViewController.swift */,
 				E834DE9C1DCE0439009A5B35 /* Cells */,
 			);
@@ -218,12 +229,11 @@
 		E834DE9C1DCE0439009A5B35 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				E834DE9D1DCE0484009A5B35 /* EngineCell.swift */,
-				E834DE9F1DCE04A4009A5B35 /* TransmissionCell.swift */,
-				E834DEA11DCE04BE009A5B35 /* ConditionCell.swift */,
-				E834DEA31DCE04DD009A5B35 /* DescriptionCell.swift */,
-				E834DEA51DCE04F8009A5B35 /* ModelCell.swift */,
-				E834DEA71DCE0511009A5B35 /* PriceCell.swift */,
+				E866A5FC1DCFB0B400188090 /* PickerViewCell.swift */,
+				E866A6001DCFE27D00188090 /* TextViewCell.swift */,
+				E866A6021DCFE31500188090 /* TextFieldCell.swift */,
+				E866A6041DCFE38F00188090 /* CollectionViewCell.swift */,
+				E866A5FF1DCFBF6A00188090 /* Collection Cells */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -231,10 +241,19 @@
 		E834DEAD1DCE0AA9009A5B35 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				E834DEAB1DCE0AA4009A5B35 /* CoreData.swift */,
+				E866A5FA1DCFA54400188090 /* CoreDataStack.swift */,
 				E8E37E8F1DCE1E07001305E8 /* Database.xcdatamodeld */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		E866A5FF1DCFBF6A00188090 /* Collection Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E831EB331DCE9C3C00E16FB8 /* ImageCell.swift */,
+				E831EB391DCF334C00E16FB8 /* AddImageCell.swift */,
+			);
+			name = "Collection Cells";
 			sourceTree = "<group>";
 		};
 		E8C134A01DCE797B006C014A /* Car Detail */ = {
@@ -403,22 +422,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E866A5FD1DCFB0B400188090 /* PickerViewCell.swift in Sources */,
 				E834DE951DCDEE8B009A5B35 /* AddCarViewController.swift in Sources */,
-				E834DEA41DCE04DD009A5B35 /* DescriptionCell.swift in Sources */,
-				E834DEAC1DCE0AA4009A5B35 /* CoreData.swift in Sources */,
-				E834DEA21DCE04BE009A5B35 /* ConditionCell.swift in Sources */,
 				E834DE801DCDDB0B009A5B35 /* CarListViewController.swift in Sources */,
 				E834DE6E1DCDD407009A5B35 /* AppDelegate.swift in Sources */,
 				E8E37E9E1DCE35BF001305E8 /* Thumbnail+CoreDataClass.swift in Sources */,
-				E834DEA61DCE04F8009A5B35 /* ModelCell.swift in Sources */,
 				E8E37EA21DCE35BF001305E8 /* Car+CoreDataClass.swift in Sources */,
+				E866A6011DCFE27D00188090 /* TextViewCell.swift in Sources */,
+				E831EB341DCE9C3C00E16FB8 /* ImageCell.swift in Sources */,
 				E8E37EA11DCE35BF001305E8 /* Weather+CoreDataProperties.swift in Sources */,
-				E834DEA01DCE04A4009A5B35 /* TransmissionCell.swift in Sources */,
+				E831EB3A1DCF334C00E16FB8 /* AddImageCell.swift in Sources */,
+				E866A6051DCFE38F00188090 /* CollectionViewCell.swift in Sources */,
+				E831EB361DCEA40A00E16FB8 /* ImagePicker.swift in Sources */,
 				E8E37EAB1DCE5E56001305E8 /* WeatherView.swift in Sources */,
 				E8E37EA01DCE35BF001305E8 /* Weather+CoreDataClass.swift in Sources */,
 				E834DE9B1DCDF8D5009A5B35 /* Extensions.swift in Sources */,
-				E834DE9E1DCE0484009A5B35 /* EngineCell.swift in Sources */,
-				E834DEA81DCE0511009A5B35 /* PriceCell.swift in Sources */,
 				E8E37EA81DCE42F4001305E8 /* DataService.swift in Sources */,
 				E8E37E9F1DCE35BF001305E8 /* Thumbnail+CoreDataProperties.swift in Sources */,
 				E8C134A21DCE8523006C014A /* CarData.swift in Sources */,
@@ -426,6 +444,8 @@
 				E8E37E971DCE317A001305E8 /* OpenWeatherMap.swift in Sources */,
 				E8E37E911DCE1E07001305E8 /* Database.xcdatamodeld in Sources */,
 				E834DE8A1DCDDCBF009A5B35 /* CarTableViewCell.swift in Sources */,
+				E866A5FB1DCFA54400188090 /* CoreDataStack.swift in Sources */,
+				E866A6031DCFE31500188090 /* TextFieldCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +474,7 @@
 		E834DE7A1DCDD409009A5B35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -469,6 +490,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -503,6 +525,7 @@
 		E834DE7B1DCDD409009A5B35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -518,6 +541,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -546,6 +570,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D71333610D440ACC353FC850 /* Pods-CarTest.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79E75HSXYN;
 				INFOPLIST_FILE = CarTest/Info.plist;
@@ -560,6 +585,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30ACF5350EF161FF8C8A1260 /* Pods-CarTest.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79E75HSXYN;
 				INFOPLIST_FILE = CarTest/Info.plist;

@@ -19,7 +19,7 @@ class CarListViewController: UIViewController {
     fileprivate lazy var fetchedResultsController: NSFetchedResultsController<Car> = {
         let fetchRequest: NSFetchRequest<Car> = Car.fetchRequest()
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "model", ascending: true)]
-        let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: CoreData.context, sectionNameKeyPath: nil, cacheName: nil)
+        let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: CoreDataStack.context, sectionNameKeyPath: nil, cacheName: nil)
         fetchedResultsController.delegate = self
         
         do {
@@ -70,6 +70,11 @@ class CarListViewController: UIViewController {
     @IBAction func unwindToCarList(sender: UIStoryboardSegue) {
     }
     
+    
+    func showAlert(_ error: Error) {
+        
+    }
+    
 }
 
 
@@ -93,29 +98,24 @@ extension CarListViewController: UITableViewDataSource {
         cell.car = car
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let car = fetchedResultsController.object(at: indexPath)
+            car.managedObjectContext?.delete(car)
+        }
+    }
+    
 }
 
 
 // MARK: - UITableViewDelegate
 
 extension CarListViewController: UITableViewDelegate {
-
-    private func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    
-    private func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            let car = fetchedResultsController.object(at: indexPath)
-            car.managedObjectContext?.delete(car)
-//            CoreData.context.delete(car)
-        }
-    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         selectedCar = fetchedResultsController.object(at: indexPath)
-        performSegue(.CarDetailSegue, sender: self)
+//        performSegue(.CarDetailSegue, sender: self)
     }
     
 }
@@ -170,11 +170,12 @@ extension CarListViewController: CLLocationManagerDelegate {
             OpenWeatherMap.currentWeatherFor(location, completion: { json, error in
                 var weatherJson: JSON!
                 
-                if error == nil {
+                if error != nil {
+                    guard let json = DataService.instance.getWeather() else { return self.showAlert(error!) }
                     weatherJson = json
-                    DataService.instance.storeWeather(json!)
                 } else {
-                    weatherJson = DataService.instance.getWeather()
+                    DataService.instance.storeWeather(json!)
+                    weatherJson = json
                 }
                 
                 DispatchQueue.main.async(execute: {
